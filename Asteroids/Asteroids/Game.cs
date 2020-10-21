@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
@@ -158,7 +156,7 @@ namespace Asteroids
             for (int i=0; i<asteroids.Count; i++)
             if (ship.Collision(asteroids[i]))
             {
-                ship.EnergyLow(100);
+                ship.EnergyLow(50);
                 asteroids.RemoveAt(i);
                 MessageToLog.Invoke("Ship collided with an asteroid");
             }

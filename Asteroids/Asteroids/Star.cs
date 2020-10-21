@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace Asteroids
 {
@@ -13,7 +8,7 @@ namespace Asteroids
 
         public Star(Point pos, Point dir, Size size) : base(pos, dir, size)
         {
-            //this.image = image;
+
         }
 
         public override void Draw()
